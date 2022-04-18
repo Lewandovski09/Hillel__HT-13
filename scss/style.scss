@@ -378,7 +378,7 @@ $background-color-footer: #313030;
     &--image {
       width: 100%;
       height: 100%;
-      background-image: url("../assets/images/section-team/06.jpg");
+      background-image: url("./../assets/images/section-team/06.jpg");
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -449,7 +449,7 @@ $background-color-footer: #313030;
 
         height: 214px;
         background-color: #f5f0dd;
-        background-image: url("../assets/images/section-team/small4.png");
+        background-image: url("./../assets/images/section-team/small4.png");
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -459,7 +459,8 @@ $background-color-footer: #313030;
         p {
           font-size: 0;
         }
-      ;
+
+        ;
 
         &:hover {
 
@@ -520,7 +521,7 @@ $background-color-footer: #313030;
   }
 
   &__parts-form {
-    
+
 
     label {
       display: inline-block;

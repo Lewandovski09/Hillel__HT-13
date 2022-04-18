@@ -464,7 +464,7 @@ h1, h2, h3, h4, h5, h6 {
 .team__main--image {
   width: 100%;
   height: 100%;
-  background-image: url("../assets/images/section-team/06.jpg");
+  background-image: url("./../assets/images/section-team/06.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -539,7 +539,7 @@ h1, h2, h3, h4, h5, h6 {
   width: calc(25% - 15px);
   height: 214px;
   background-color: #f5f0dd;
-  background-image: url("../assets/images/section-team/small4.png");
+  background-image: url("./../assets/images/section-team/small4.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
