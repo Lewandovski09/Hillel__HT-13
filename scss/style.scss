@@ -69,7 +69,7 @@ $background-color-footer: #313030;
       text-transform: uppercase;
       padding: 45px 25px 35px;
       font-weight: bold;
-      font-size: 18px;
+      letter-spacing: 0.035em;
 
       &:hover {
         transition: background-color .3s;
@@ -539,16 +539,20 @@ $background-color-footer: #313030;
   }
 
   &__parts-form {
-
+    max-width: 757px;
+    margin: 0 auto;
+    display: flex;
+    // justify-content: space-between;
+    gap:22px;
 
     label {
       display: inline-block;
-
+      flex-grow: 1;
     }
 
     input {
       display: inline-block;
-      width: 520px;
+      width: 100%;
       background-color: #fff;
       border-radius: 7px;
       padding: 30px 36px;
@@ -570,29 +574,28 @@ $background-color-footer: #313030;
 
 
     .btn {
-      vertical-align: bottom;
       max-height: 83px;
-      margin-left: 22px;
       text-transform: uppercase;
       background-color: #ff2d2d;
       border: 2px solid #ff2d2d;
       color: #fff;
       border-radius: 7px;
       display: inline-block;
-      max-width: 212px;
-      width: 100%;
-      padding: 29px 0;
+      padding: 24px 55px;
+     
 
       span {
         text-align: center;
         font-size: 18px;
         font-weight: bold;
-        letter-spacing: 1px;
+        letter-spacing: 0.025em;
+        line-height: 28px;
       }
 
       &:hover {
         background-color: #fff;
         color: #ff2d2d;
+        border-color: #fff;
       }
 
       &:active {
@@ -649,31 +652,40 @@ $background-color-footer: #313030;
 
     &::after {
       content: "";
-      display: inline-block;
+      display: block;
       width: 100vw;
       height: 100%;
       background-color: #2d2d2d;
       position: absolute;
-      left: 100%;
+      left:99%;
     }
 
     &-1 {
-      max-width: 750px;
+      max-width: 60%;
       padding-right: 15px;
+      flex-grow: 1;
     }
 
-    #form_id {
+    #form-id {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      flex-grow: 1;
+      .form-id__enter{
+        display: flex;
+        flex-wrap: wrap;
+        gap:52px;
+      }
+      
 
       label {
+        flex-grow: 1;
         display: inline-block;
       }
 
-      #name {
-        margin-right: 50px;
-      }
-
       input {
-        width: 340px;
+        
+        width: 100%;
         max-height: 69px;
         display: inline-block;
         background-color: #e5e5e5;
@@ -691,8 +703,8 @@ $background-color-footer: #313030;
       }
 
       #comments {
+        width: 100%;
         margin-top: 45px;
-        width: 732px;
         max-height: 250px;
         border-radius: 7px;
         background-color: #e5e5e5;
@@ -719,7 +731,8 @@ $background-color-footer: #313030;
         border-radius: 7px;
         display: inline-block;
         padding: 17px 0;
-        width: 732px;
+        width: 100%;
+        flex-grow: 1;
 
         span {
           text-align: center;
@@ -752,12 +765,12 @@ $background-color-footer: #313030;
     &-2 {
       padding-left: 90px;
 
-      width: 500px;
-      height: 100%;
+      max-width: 40%;
+      height: 480px;
 
       &--address {
         height: 100%;
-        padding: 122px 42px 133px 79px;
+        padding: 122px 40px 121px 68px;
         background-color: #2d2d2d;
         font-style: normal;
         color: #d5d5d5;

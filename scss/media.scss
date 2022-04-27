@@ -130,23 +130,19 @@
 
     }
 
-    .subscribe {
-        &__parts-form {
-            input {
-                max-width: 480px;
-                padding: 27px 34px;
-                max-height: 77px;
-            }
 
-            .btn {
-                max-height: 77px;
-                padding: 24px 0;
-                max-width: 205px;
+    .contact {
+        &__section {
+
+            &-2 {
+                padding-left: 85px;
+                &--address {
+                    padding: 120px 10px 120px 65px;
+                }
             }
         }
     }
-
-   
+    
 }
 
 @media (max-width:1024px) {
@@ -270,12 +266,17 @@
     
     }
 
-    .subscribe {
-        &__parts-form {
-            input {
-                max-width: 460px;
-                padding: 25px 34px;
-                max-height: 77px;
+    
+
+    .contact {
+        &__section {
+    
+            &-2 {
+                padding-left: 80px;
+    
+                &--address {
+                   padding: 115px 0 115px 60px;
+                }
             }
         }
     }

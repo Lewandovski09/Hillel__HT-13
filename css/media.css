@@ -98,15 +98,11 @@
     gap: 12px;
     height: 160px;
   }
-  .subscribe__parts-form input {
-    max-width: 480px;
-    padding: 27px 34px;
-    max-height: 77px;
+  .contact__section-2 {
+    padding-left: 85px;
   }
-  .subscribe__parts-form .btn {
-    max-height: 77px;
-    padding: 24px 0;
-    max-width: 205px;
+  .contact__section-2--address {
+    padding: 120px 10px 120px 65px;
   }
 }
 
@@ -190,13 +186,14 @@
     gap: 0;
   }
   .team__line-up--images div {
-    width:25%;
+    width: 25%;
     height: 160px;
   }
-  .subscribe__parts-form input {
-    max-width: 460px;
-    padding: 25px 34px;
-    max-height: 77px;
+  .contact__section-2 {
+    padding-left: 80px;
+  }
+  .contact__section-2--address {
+    padding: 115px 0 115px 60px;
   }
 }
 
