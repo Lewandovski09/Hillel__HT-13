@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 .wrapper {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #4c4c4c;
   font-weight: 400;
@@ -135,8 +135,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__menu-list--link:hover {
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
   background-color: #ff3f40;
 }
 
@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner__main-title--style {
-  color: #000000;
+  color: #000;
   font-weight: 800;
   font-size: 60px;
   text-transform: uppercase;
@@ -190,10 +190,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 24px 0 34px 0;
 }
 
-.banner__text--style {
-  color: #494848;
-}
-
 .banner__button--link {
   background-color: #ff2d2d;
   color: #ffffff;
@@ -202,8 +198,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner__button--link:hover {
   background-color: #fff;
-  border-color: #ff0000;
-  color: #ff0000;
+  border-color: #ff2d2d;
+  color: #ff2d2d;
 }
 
 .banner__iframe {
@@ -268,8 +264,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .services .section-1__button--link {
   background-color: #fff;
-  border-color: #ff0000;
-  color: #ff0000;
+  border-color: #ff2d2d;
+  color: #ff2d2d;
 }
 
 .services .section-1__button--link:hover {
@@ -325,6 +321,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-size: 25px;
   text-transform: capitalize;
+  color: #333333;
 }
 
 .channel {
@@ -340,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
   content: " ";
   max-width: 132px;
   height: 3px;
-  background-color: #ff3b3b;
+  background-color: #ff2d2d;
   display: block;
   margin: 0 auto;
 }
@@ -387,8 +384,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .channel__menu-list--link:hover {
-  -webkit-transition: color .3s;
-  transition: color .3s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
   color: #ff2d2d;
 }
 
@@ -441,7 +438,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   width: 132px;
   height: 3px;
-  background-color: #ff3b3b;
+  background-color: #ff2d2d;
   display: block;
 }
 
@@ -533,8 +530,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team__line-up--menu-ul li a:hover {
-  -webkit-transition: color .3s;
-  transition: color .3s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
   color: #ff2d2d;
 }
 
@@ -589,8 +586,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   text-align: center;
       align-self: flex-end;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .team__line-up--images div:hover p a {
@@ -601,7 +598,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .subscribe {
-  background-color: #1f18d7;
   background-image: url("./../assets/images/section-subscribe/14.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -654,22 +650,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .subscribe__parts-form input::-webkit-input-placeholder {
-  color: #4c4c4c;
+  color: #444444;
   font-size: 16px;
 }
 
 .subscribe__parts-form input:-ms-input-placeholder {
-  color: #4c4c4c;
+  color: #444444;
   font-size: 16px;
 }
 
 .subscribe__parts-form input::-ms-input-placeholder {
-  color: #4c4c4c;
+  color: #444444;
   font-size: 16px;
 }
 
 .subscribe__parts-form input::placeholder {
-  color: #4c4c4c;
+  color: #444444;
   font-size: 16px;
 }
 
@@ -701,7 +697,6 @@ h1, h2, h3, h4, h5, h6 {
 .subscribe__parts-form .btn:hover {
   background-color: #fff;
   color: #ff2d2d;
-  border-color: #fff;
 }
 
 .subscribe__parts-form .btn:active {
@@ -711,8 +706,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .subscribe__parts-form .btn:focus {
-  background-color: #5e5757;
-  color: #fff;
   border: 1px solid #7fbed5;
   -webkit-box-shadow: 0 0 18px -1px rgba(176, 225, 245, 0.93);
           box-shadow: 0 0 18px -1px rgba(176, 225, 245, 0.93);
@@ -734,7 +727,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   height: 3px;
   width: 132px;
-  background-color: #ff2b2b;
+  background-color: #ff2d2d;
   position: absolute;
   bottom: 0;
 }
@@ -901,8 +894,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact__section #form-id .btn:focus {
-  background-color: #5e5757;
-  color: #fff;
   border: 1px solid #7fbed5;
   -webkit-box-shadow: 0 0 18px -1px rgba(176, 225, 245, 0.93);
           box-shadow: 0 0 18px -1px rgba(176, 225, 245, 0.93);

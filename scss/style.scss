@@ -1,29 +1,63 @@
 @import "_reset.scss";
 
 // переменные
+$container-width:1280px;
+$break-point-1:1280px;
+$break-point-2:1024px;
+$break-point-3:992px;
+$break-point-4:767px;
+$break-point-5:576px;
+$point-container-1:1024px;
+$point-container-2:992px;
+$point-container-3:767px;
+$point-container-4:576px;
+$point-container-5:none;
+
 $background-header: #f6f2f2;
 $background-header-menu: #313030;
 $background-banner: #f6f2f2;
 $background-services: #fff;
 $background-channel: #fff;
 $background-team: #fff;
-$background-subscribe: #1f18d7;
+$background-image-subscribe: url("./../assets/images/section-subscribe/14.jpg");
 $background-contact: #fff;
 $background-footer: #313030;
+$background-line-up-team:#f5f0dd;
+$background-contact-info:#2d2d2d;
 
+$hover-menu: #ff3f40;
+$hover-color: #ff2d2d;
+$hover-line-up:#7a786e;
+$active-color:rgb(94, 87, 87);
+$focus-color:1px solid #7fbed5;
+$placeholder-color:#444444;
 
+$h1-color:#000;
+$subtitle-color:#333333;
+$sub-sub-title-color:#333333;
+$menu-text-color:#e0e0e0;
+$color-text-contact-info:#d5d5d5;
+$color-channel-menu:#4c4c4c;
+$copy-footer:#b8b8b8;
 
+$iframe-shadow:-2px -14px 73px 0px rgba(0, 0, 0, 0.28);
+$shadow-form: 0 0 18px -1px rgba(176, 225, 245, 0.93);
+
+$main-font:'Open Sans', sans-serif;
+$main-color:#4c4c4c;
+$button-fz:18px;
+$transition: .3s;
 
 .wrapper {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $main-font;
   font-size: 16px;
-  color: #4c4c4c;
+  color: $main-color;
   font-weight: 400;
   line-height: 28px;
 }
 
 .container {
-  max-width: 1280px;
+  max-width: $container-width;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -36,13 +70,13 @@ $background-footer: #313030;
   display: inline-block;
   text-transform: capitalize;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: $button-fz;
   font-weight: bold;
   border: 2px solid;
 }
 
 .subtitle {
-  color: #333333;
+  color: $subtitle-color;
   text-transform: uppercase;
   font-size: 42px;
   font-weight: 700;
@@ -65,7 +99,7 @@ $background-footer: #313030;
     justify-content: center;
 
     &--link {
-      color: #e0e0e0;
+      color: $menu-text-color;
       display: inline-block;
       text-transform: uppercase;
       padding: 45px 25px 35px;
@@ -73,8 +107,8 @@ $background-footer: #313030;
       letter-spacing: 0.035em;
 
       &:hover {
-        transition: background-color .3s;
-        background-color: #ff3f40;
+        transition: background-color $transition;
+        background-color: $hover-menu;
       }
     }
   }
@@ -106,7 +140,7 @@ $background-footer: #313030;
   &__main-title {
     max-width: 590px;
     &--style {
-      color: #000000;
+      color: $h1-color;
       font-weight: 800;
       font-size: 60px;
       text-transform: uppercase;
@@ -118,21 +152,17 @@ $background-footer: #313030;
   &__text {
     max-width: 520px;
     margin: 24px 0 34px 0;
-
-    &--style {
-      color: #494848;
-    }
   }
 
   &__button--link {
-    background-color: #ff2d2d;
+    background-color: $hover-color;
     color: #ffffff;
-    border-color: #ff2d2d;
+    border-color: $hover-color;
 
     &:hover {
       background-color: #fff;
-      border-color: #ff0000;
-      color: #ff0000;
+      border-color: $hover-color;
+      color: $hover-color;
     }
   }
 
@@ -143,7 +173,7 @@ $background-footer: #313030;
     
 
     &--style {
-      box-shadow: -2px -14px 73px 0px rgba(0, 0, 0, 0.28);
+      box-shadow: $iframe-shadow;
       width: 100%;
       min-height: 330px;
     }
@@ -193,13 +223,13 @@ $background-footer: #313030;
 
       &--link {
         background-color: #fff;
-        border-color: #ff0000;
-        color: #ff0000;
+        border-color: $hover-color;
+        color: $hover-color;
 
         &:hover {
-          background-color: #ff2d2d;
+          background-color: $hover-color;
           color: #ffffff;
-          border-color: #ff2d2d;
+          border-color: $hover-color;
         }
       }
     }
@@ -239,6 +269,7 @@ $background-footer: #313030;
         font-weight: 600;
         font-size: 25px;
         text-transform: capitalize;
+        color:$sub-sub-title-color;
       }
     }
   }
@@ -259,7 +290,7 @@ $background-footer: #313030;
       content: " ";
       max-width: 132px;
       height: 3px;
-      background-color: #ff3b3b;
+      background-color: $hover-color;
       display: block;
       margin: 0 auto;
     }
@@ -295,11 +326,11 @@ $background-footer: #313030;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 22px;
-        color: #4c4c4c;
+        color: $color-channel-menu;
 
         &:hover {
-          transition: color .3s;
-          color: #ff2d2d;
+          transition: color $transition;
+          color: $hover-color;
         }
       }
     }
@@ -349,7 +380,7 @@ $background-footer: #313030;
       bottom: 0;
       width: 132px;
       height: 3px;
-      background-color: #ff3b3b;
+      background-color: $hover-color;
       display: block;
     }
 
@@ -408,7 +439,7 @@ $background-footer: #313030;
         font-weight: 600;
         font-size: 30px;
         text-transform: uppercase;
-        color: #333333;
+        color: $sub-sub-title-color;
       }
 
       p {
@@ -429,15 +460,15 @@ $background-footer: #313030;
 
         li {
           font-style: italic;
-          font-size: 18px;
+          font-size: $button-fz;
           margin-right: 30px;
 
           a {
-            color: #333333;
+            color: $sub-sub-title-color;
 
             &:hover {
-              transition: color .3s;
-              color: #ff2d2d;
+              transition: color $transition;
+              color: $hover-color;
             }
           }
 
@@ -460,7 +491,7 @@ $background-footer: #313030;
         width: calc(25% - 15px);
         position: relative;
         height: 214px;
-        background-color: #f5f0dd;
+        background-color: $background-line-up-team;
 
         img {
           object-fit: cover;
@@ -485,14 +516,14 @@ $background-footer: #313030;
 
           p {
             width: 100%;
-            background-color: #7a786e;
+            background-color: $hover-line-up;
             padding: 5px 0;
-            font-size: 18px;
+            font-size: $button-fz;
             font-weight: 600;
             text-transform: uppercase;
             text-align: center;
             align-self: flex-end;
-            transition: .3s;
+            transition: $transition;
 
             a {
               display: inline-block;
@@ -512,8 +543,7 @@ $background-footer: #313030;
 
 // Subscribe ----------------
 .subscribe {
-  background-color: $background-subscribe;
-  background-image: url("./../assets/images/section-subscribe/14.jpg");
+  background-image: $background-image-subscribe;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -560,14 +590,14 @@ $background-footer: #313030;
       max-height: 83px;
 
       &::placeholder {
-        color: #4c4c4c;
+        color: $placeholder-color;
         font-size: 16px;
 
       }
 
       &:focus {
-        border: 1px solid #7fbed5;
-        box-shadow: 0 0 18px -1px rgba(176, 225, 245, 0.93);
+        border: $focus-color;
+        box-shadow: $shadow-form;
       }
 
     }
@@ -576,8 +606,8 @@ $background-footer: #313030;
     .btn {
       max-height: 83px;
       text-transform: uppercase;
-      background-color: #ff2d2d;
-      border: 2px solid #ff2d2d;
+      background-color: $hover-color;
+      border: 2px solid $hover-color;
       color: #fff;
       border-radius: 7px;
       display: inline-block;
@@ -586,7 +616,7 @@ $background-footer: #313030;
 
       span {
         text-align: center;
-        font-size: 18px;
+        font-size: $button-fz;
         font-weight: bold;
         letter-spacing: 0.025em;
         line-height: 28px;
@@ -594,21 +624,18 @@ $background-footer: #313030;
 
       &:hover {
         background-color: #fff;
-        color: #ff2d2d;
-        border-color: #fff;
+        color: $hover-color;
       }
-
+      
       &:active {
-        background-color: rgb(94, 87, 87);
+        background-color: $active-color;
         color: #fff;
         border-color: #fff;
       }
-
+      
       &:focus {
-        background-color: rgb(94, 87, 87);
-        color: #fff;
-        border: 1px solid #7fbed5;
-        box-shadow: 0 0 18px -1px rgba(176, 225, 245, 0.93);
+        border: $focus-color;
+        box-shadow: $shadow-form;
       }
     }
   }
@@ -631,7 +658,7 @@ $background-footer: #313030;
       display: block;
       height: 3px;
       width: 132px;
-      background-color: #ff2b2b;
+      background-color: $hover-color;
       position: absolute;
       bottom: 0;
     }
@@ -655,7 +682,7 @@ $background-footer: #313030;
       display: block;
       width: 100vw;
       height: 100%;
-      background-color: #2d2d2d;
+      background-color: $background-contact-info;
       position: absolute;
       left:99%;
     }
@@ -693,12 +720,12 @@ $background-footer: #313030;
         padding: 26px 48px;
 
         &::placeholder {
-          color: #444444
+          color: $placeholder-color;
         }
 
         &:focus {
-          border: 1px solid #7fbed5;
-          box-shadow: 0 0 18px -1px rgba(176, 225, 245, 0.93);
+          border: $focus-color;
+          box-shadow: $shadow-form;
         }
       }
 
@@ -712,12 +739,12 @@ $background-footer: #313030;
         padding: 36px 52px;
 
         &::placeholder {
-          color: #444444
+          color: $placeholder-color;
         }
 
         &:focus {
-          border: 1px solid #7fbed5;
-          box-shadow: 0 0 18px -1px rgba(176, 225, 245, 0.93);
+          border: $focus-color;
+          box-shadow: $shadow-form;
         }
       }
 
@@ -725,8 +752,8 @@ $background-footer: #313030;
         max-height: 71px;
         margin-top: 45px;
         text-transform: uppercase;
-        background-color: #ff2d2d;
-        border: 2px solid #ff2d2d;
+        background-color: $hover-color;
+        border: 2px solid $hover-color;
         color: #fff;
         border-radius: 7px;
         display: inline-block;
@@ -736,7 +763,7 @@ $background-footer: #313030;
 
         span {
           text-align: center;
-          font-size: 18px;
+          font-size: $button-fz;
           font-weight: bold;
           letter-spacing: 1px;
           line-height: 34px;
@@ -744,20 +771,18 @@ $background-footer: #313030;
 
         &:hover {
           background-color: #fff;
-          color: #ff2d2d;
+          color: $hover-color;
         }
 
         &:active {
-          background-color: rgb(94, 87, 87);
+          background-color: $active-color;
           color: #fff;
           border-color: #fff;
         }
 
         &:focus {
-          background-color: rgb(94, 87, 87);
-          color: #fff;
-          border: 1px solid #7fbed5;
-          box-shadow: 0 0 18px -1px rgba(176, 225, 245, 0.93);
+          border: $focus-color;
+          box-shadow: $shadow-form;
         }
       }
     }
@@ -771,9 +796,9 @@ $background-footer: #313030;
       &--address {
         height: 100%;
         padding: 115px 40px 114px 68px;
-        background-color: #2d2d2d;
+        background-color: $background-contact-info;
         font-style: normal;
-        color: #d5d5d5;
+        color: $color-text-contact-info;
 
         h4 {
           font-weight: bold;
@@ -812,7 +837,7 @@ $background-footer: #313030;
     padding: 55px 0 40px;
 
     span {
-      color: #b8b8b8;
+      color: $copy-footer;
     }
   }
 

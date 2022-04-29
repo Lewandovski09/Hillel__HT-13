@@ -1,6 +1,6 @@
-@media (max-width:1280px) {
+@media (max-width:$break-point-1) {
     .container {
-        max-width: 1024px;
+        max-width: $point-container-1;
     }
 
     .button-universal {
@@ -150,9 +150,9 @@
     
 }
 
-@media (max-width:1024px) {
+@media (max-width:$break-point-2) {
     .container {
-        max-width: 992px;
+        max-width: $point-container-2;
     }
 
     .button-universal {
@@ -292,9 +292,9 @@
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:$break-point-3) {
     .container {
-        max-width: 767px;
+        max-width: $point-container-3;
     }
 
     .button-universal {
@@ -520,9 +520,9 @@
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:$break-point-4) {
     .container {
-        max-width: 576px;
+        max-width: $point-container-4;
     }
 
     .header {
@@ -679,9 +679,9 @@
     }
 }
 
-@media (max-width:576px) {
+@media (max-width:$break-point-5) {
     .container {
-        max-width: none;
+        max-width: $point-container-5;
     }
 
     .button-universal {
