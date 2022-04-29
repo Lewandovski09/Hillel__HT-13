@@ -1,14 +1,15 @@
 @import "_reset.scss";
 
 // переменные
-$background-color-header: #f6f2f2;
-$background-color-section1: #f6f2f2;
-$background-color-section2: #fff;
-$background-color-section3: #fff;
-$background-color-section4: #fff;
-$background-color-section5: #1f18d7;
-$background-color-section6: #fff;
-$background-color-footer: #313030;
+$background-header: #f6f2f2;
+$background-header-menu: #313030;
+$background-banner: #f6f2f2;
+$background-services: #fff;
+$background-channel: #fff;
+$background-team: #fff;
+$background-subscribe: #1f18d7;
+$background-contact: #fff;
+$background-footer: #313030;
 
 
 
@@ -53,10 +54,10 @@ $background-color-footer: #313030;
 // Header ------------------
 .header {
   padding-top: 30px;
-  background-color: $background-color-header;
+  background-color: $background-header;
 
   &__menu-wrapper {
-    background-color: #313030;
+    background-color: $background-header-menu;
   }
 
   &__menu-list {
@@ -82,7 +83,7 @@ $background-color-footer: #313030;
 
 // Banner -------------------
 .banner {
-  background-color: $background-color-section1;
+  background-color: $background-banner;
   padding: 100px 0 110px;
 
   &__content {
@@ -152,7 +153,7 @@ $background-color-footer: #313030;
 
 // Services ------------------
 .services {
-  background-color: $background-color-section2;
+  background-color: $background-services;
   padding: 110px 0 0 0;
   
 
@@ -249,7 +250,7 @@ $background-color-footer: #313030;
 
 .channel {
   padding: 105px 0 140px;
-  background-color: $background-color-section3;
+  background-color: $background-channel;
 
   &__header {
     text-align: center;
@@ -336,7 +337,7 @@ $background-color-footer: #313030;
 
 .team {
   padding-bottom: 108px;
-  background-color: $background-color-section4;
+  background-color: $background-team;
 
   &__header {
     position: relative;
@@ -511,11 +512,11 @@ $background-color-footer: #313030;
 
 // Subscribe ----------------
 .subscribe {
-  background-color: $background-color-section5;
-  background-image: url("./../assets/images/section-subscribe/06.jpg");
-  background-position: center right;
+  background-color: $background-subscribe;
+  background-image: url("./../assets/images/section-subscribe/14.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   padding: 140px 0;
 
   &__content {
@@ -542,7 +543,6 @@ $background-color-footer: #313030;
     max-width: 757px;
     margin: 0 auto;
     display: flex;
-    // justify-content: space-between;
     gap:22px;
 
     label {
@@ -766,11 +766,11 @@ $background-color-footer: #313030;
       padding-left: 90px;
 
       max-width: 40%;
-      height: 480px;
+      height: 488px;
 
       &--address {
         height: 100%;
-        padding: 122px 40px 121px 68px;
+        padding: 115px 40px 114px 68px;
         background-color: #2d2d2d;
         font-style: normal;
         color: #d5d5d5;
@@ -800,7 +800,7 @@ $background-color-footer: #313030;
 // Footer -------------
 .footer {
   margin-top: 110px;
-  background-color: $background-color-footer;
+  background-color: $background-footer;
 
   &__content {
     display: flex;

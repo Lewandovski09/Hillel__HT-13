@@ -98,6 +98,9 @@
     gap: 12px;
     height: 160px;
   }
+  .contact__header p {
+    max-width: 588px;
+  }
   .contact__section-2 {
     padding-left: 85px;
   }
@@ -188,6 +191,9 @@
   .team__line-up--images div {
     width: 25%;
     height: 160px;
+  }
+  .contact__header p {
+    max-width: 553px;
   }
   .contact__section-2 {
     padding-left: 80px;
@@ -330,6 +336,50 @@
     width: calc(25% - 12px);
     height: 180px;
   }
+  .subscribe__parts-form {
+    max-width: 625px;
+  }
+  .subscribe__parts-form .btn {
+    max-height: 83px;
+    text-transform: uppercase;
+    background-color: #ff2d2d;
+    border: 2px solid #ff2d2d;
+    color: #fff;
+    border-radius: 7px;
+    display: inline-block;
+    padding: 24px 50px;
+  }
+  .contact__header p {
+    max-width: 100%;
+  }
+  .contact__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 80px;
+  }
+  .contact__section::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 488px;
+    background-color: #2d2d2d;
+    position: absolute;
+    left: 99%;
+    bottom: 0;
+  }
+  .contact__section-1 {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .contact__section-2 {
+    max-width: 100%;
+    padding-left: 0;
+  }
+  .contact__section-2--address {
+    padding: 115px 0 115px 60px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -411,6 +461,27 @@
   .team__line-up--images div {
     width: calc(50% - 20px);
     height: 255px;
+  }
+  .subscribe__parts-form {
+    max-width: 500px;
+  }
+  .subscribe__parts-form input {
+    padding: 25px 36px;
+    font-size: 16px;
+    max-height: 70px;
+  }
+  .subscribe__parts-form .btn {
+    max-height: 70px;
+    padding: 20px 30px;
+  }
+  .contact__section {
+    row-gap: 70px;
+  }
+  .contact__section #form-id #comments {
+    max-height: 200px;
+  }
+  .contact__section-2--address {
+    padding: 110px 0 100px 60px;
   }
   .footer__copy {
     width: 100%;
@@ -611,6 +682,42 @@
   }
   .team__line-up--menu-ul li:nth-of-type(even) {
     margin-right: 0;
+  }
+  .subscribe__parts-form {
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subscribe__parts-form input {
+    padding: 25px 24px;
+    font-size: 16px;
+    max-height: 70px;
+  }
+  .subscribe__parts-form .btn {
+    max-height: 70px;
+    padding: 20px 30px;
+  }
+  .contact__section {
+    row-gap: 70px;
+  }
+  .contact__section::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 488px;
+    background-color: #2d2d2d;
+    position: absolute;
+    right: 99%;
+    bottom: 0;
+  }
+  .contact__section #form-id #comments {
+    max-height: 170px;
+  }
+  .contact__section-2--address {
+    padding: 110px 10px 100px 10px;
+    text-align: center;
   }
   .footer__copy {
     width: 100%;

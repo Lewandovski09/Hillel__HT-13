@@ -217,8 +217,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner__iframe--style {
-  -webkit-box-shadow: -2px -14px 73px 0px rgba(0, 0, 0, 0.28);
-          box-shadow: -2px -14px 73px 0px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: -2px -14px 73px 0 rgba(0, 0, 0, 0.28);
+          box-shadow: -2px -14px 73px 0 rgba(0, 0, 0, 0.28);
   width: 100%;
   min-height: 330px;
 }
@@ -588,7 +588,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  -ms-flex-item-align: end;
       align-self: flex-end;
   -webkit-transition: .3s;
   transition: .3s;
@@ -603,10 +602,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .subscribe {
   background-color: #1f18d7;
-  background-image: url("./../assets/images/section-subscribe/06.jpg");
-  background-position: center right;
+  background-image: url("./../assets/images/section-subscribe/14.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   padding: 140px 0;
 }
 
@@ -641,7 +640,6 @@ h1, h2, h3, h4, h5, h6 {
 .subscribe__parts-form label {
   display: inline-block;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
@@ -774,7 +772,6 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 60%;
   padding-right: 15px;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
@@ -788,7 +785,6 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
   width: 100%;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
@@ -803,7 +799,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact__section #form-id label {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
           flex-grow: 1;
   display: inline-block;
 }
@@ -883,7 +878,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 17px 0;
   width: 100%;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
@@ -917,12 +911,12 @@ h1, h2, h3, h4, h5, h6 {
 .contact__section-2 {
   padding-left: 90px;
   max-width: 40%;
-  height: 480px;
+  height: 488px;
 }
 
 .contact__section-2--address {
   height: 100%;
-  padding: 122px 40px 121px 68px;
+  padding: 115px 40px 114px 68px;
   background-color: #2d2d2d;
   font-style: normal;
   color: #d5d5d5;
