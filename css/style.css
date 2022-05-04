@@ -1287,7 +1287,24 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
   }
   .team__main {
-    height: 350px;
+    height: 490px;
+  }
+  .team__main--image {
+    max-width: 100%;
+    height: 100%;
+  }
+  .team__main--image picture {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  .team__main--image picture source, .team__main--image picture img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+    width: 100%;
+    height: 100%;
   }
   .team__line-up--header {
     margin-bottom: 36px;
@@ -1418,7 +1435,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
   }
   .team__main {
-    height: 330px;
+    height: 425px;
   }
   .team__line-up--images {
     display: -webkit-box;

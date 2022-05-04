@@ -434,7 +434,25 @@
         }
     
         &__main {
-            height: 350px;
+            height: 490px;
+            &--image {
+                max-width: 100%;
+                height: 100%;
+                
+                picture{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    source,img {
+                        object-fit: cover;
+                        object-position: center center;
+                        width:100%;
+                        height: 100%;
+                    }
+                }
+            
+                
+            }
         }
     
         &__line-up {
@@ -606,7 +624,7 @@
         }
 
         &__main {
-            height: 330px;
+            height: 425px;
         }
     
         &__line-up {
